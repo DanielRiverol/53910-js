@@ -7,7 +7,9 @@
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
 }
-
+body{
+    min-height: 100dvh;
+}
 .wrapper {
     padding: 1rem;
 }
