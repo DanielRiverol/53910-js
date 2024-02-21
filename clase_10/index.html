@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <title>Clase 10 | Comisión 53910</title>
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 id="titulo"><span>Clase 10</span></h1>
+      <hr />
+      <h2 id="secundario">Eventos</h2>
+      <main>
+        <label for="ingreso">Input</label>
+        <input type="text" name="ingreso" id="ingreso" />
+
+        <button id="btnSearch" class="btn">Buscar</button>
+        <!-- Aca se pinta la card -->
+        <div id="contenedor">
+          <!-- contenido dinamico -->
+        </div>
+        <ul id="lista"></ul>
+
+        <div class="caja">
+          <p id="pais"></p>
+        </div>
+
+        <h2>Form</h2>
+        <input
+          type="text"
+          id="nombre"
+          placeholder="ingresa tu nombre"
+          class="entrada" />
+        <input type="text" id="edad" placeholder="edad" />
+        <h2>Seleccione un País</h2>
+        <p id="info"></p>
+        <select name="paises" id="paises">
+          <option value="Default">Seleccione un país</option>
+        </select>
+        <div class="pop-up hide">
+          <h2>Bienvenido al sitio</h2>
+        </div>
+
+        <h2>Formulario de contacto</h2>
+        <form action="">
+          <input type="text" placeholder="Nombre" />
+          <input type="password" placeholder="Password" />
+          <input type="submit" class="btn" value="Enviar" />
+        </form>
+      </main>
+    </div>
+    <!-- custon js -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

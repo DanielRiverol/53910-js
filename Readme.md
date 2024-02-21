@@ -15,3 +15,4 @@
  - [Clase 7](https://github.com/DanielRiverol/53910-js/tree/main/clase_7)
  - [Clase 8](https://github.com/DanielRiverol/53910-js/tree/main/clase_8)
  - [Clase 9](https://github.com/DanielRiverol/53910-js/tree/main/clase_9)
+ - [Clase 10](https://github.com/DanielRiverol/53910-js/tree/main/clase_10)
