@@ -27,13 +27,23 @@ h1 span {
 }
 
 h2 {
+    margin: 10px 0;
     margin-left: 3px;
 }
 main, ul {
     margin-left: 30px;
     margin-bottom: 10px;
 }
-
+input{
+    outline: none;
+    padding: 5px;
+    border: 1.5px solid #777;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+ul{
+list-style: none;
+}
 .card {
     margin-top: 10px;
     padding: 5px;
@@ -41,7 +51,7 @@ main, ul {
     text-transform: capitalize;
     border: 1.5px solid #777;
     border-radius: 5px;
-    color: #030255;
+    color: #5653ed;
 }
 
 .box {
