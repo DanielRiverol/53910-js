@@ -60,7 +60,7 @@ ul {
 }
 
 .box {
-  background-color: #eaff6a;
+  background-color: #6af5ff;
   padding: 40px;
   width: 300px;
   border-radius: 20px;
@@ -72,9 +72,9 @@ ul {
 .caja {
   width: 550px;
   height: 368px;
-  background-color: yellow;
+  background-color: rgb(106, 245, 255);
   background-size: cover;
-  border: 15px rgb(253, 233, 12) solid;
+  border: 15px rgb(4, 156, 167) solid;
   padding: 50px;
   margin: 2rem;
 }
@@ -84,16 +84,27 @@ img {
   height: 200px !important;
   object-fit: cover;
 }
-
+/* Estilos generales del pop-up */
 .card,
 .pop-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: aliceblue;
   margin-top: 10px;
   padding: 5px;
   width: 250px;
-  border: 1px solid #777;
+  height: 250px;
+  border: 3px solid #252525;
   border-radius: 5px;
-  transition: all 0.4s ease;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: -400px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.card {
+  position: static;
 }
 
 .card h3 {
@@ -103,16 +114,23 @@ img {
 .card-action {
   max-width: 100%;
 }
-
-.hide {
-  display: none;
-}
+/* Hacer visible el pop-up */
 .visible {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  display: block;
+  top: 400px;
 }
+.btn-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
 .btn {
   width: 100px;
   border-radius: 5px;
@@ -121,5 +139,5 @@ img {
   background-color: #5653ed;
   padding: 5px;
   font-size: 1rem;
+  cursor: pointer;
 }
-
