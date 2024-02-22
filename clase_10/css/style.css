@@ -27,7 +27,7 @@ h1 span {
 }
 
 h2 {
-  margin: 10px 0;
+  margin: 15px 0;
   margin-left: 3px;
 }
 main,
@@ -48,6 +48,17 @@ select {
 }
 ul {
   list-style: none;
+}
+form {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid ;
+  border-radius: 5px;
+  width: 400px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .card {
   margin-top: 10px;
