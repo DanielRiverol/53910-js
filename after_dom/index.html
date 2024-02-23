@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Admin Remeras</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <h3>Ingresa un producto</h3>
+        <div class="col m3">
+          <div class="row">
+            <form class="col s12" id="form-ingreso">
+              <div class="row">
+                <div class="input-field col s8">
+                  <input id="nombre" type="text" class="validate" />
+                  <label for="nombre"
+                    >Nombre <small>(Ej: Camiseta dama)</small></label
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="descripcion" type="text" class="validate" />
+                  <label for="descripcion"
+                    >Descripción
+                    <small>(Ej: Camiseta dama elegante)</small></label
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="precio" type="number" class="validate" />
+                  <label for="precio">Precio <small>($)</small></label>
+                </div>
+                <div class="input-field col s6">
+                  <select id="select-talle">
+                    <option value="no disponible" disabled selected>
+                      xs, s, m...
+                    </option>
+                    <!-- Talles dinámicos -->
+                  </select>
+                  <label>Talle</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <labelee for="img">Imagen url <small>(Ej: ./img/tshirt)</small></labelee>
+                  <input id="img" type="text" class="validate" />
+                </div>
+              </div>
+
+              <input
+                type="button"
+                id="btnGuardar"
+                class="btn"
+                value="Guardar" />
+            </form>
+          </div>
+        </div>
+        <!-- Contenedor de tarjetas -->
+        <div class="row" id="contenedor">
+          <!-- Contenido dinamico -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/materialize.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
