@@ -52,7 +52,7 @@ ul {
 form {
   margin-top: 20px;
   padding: 10px;
-  border: 1px solid ;
+  border: 1px solid;
   border-radius: 5px;
   width: 400px;
   height: 230px;
@@ -109,15 +109,17 @@ img {
   border: 3px solid #252525;
   border-radius: 5px;
   transition: all 0.8s ease;
+  flex-direction: column;
+}
+.card{
+  height: auto;
+  color: inherit;
+}
+.pop-up {
   position: absolute;
   top: -400px;
   left: 50%;
   transform: translateX(-50%);
-}
-.card {
-  position: static;
-flex-direction: column;
-
 }
 
 .card h3 {

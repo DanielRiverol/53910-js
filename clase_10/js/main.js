@@ -83,17 +83,17 @@ caja.addEventListener('click',()=>{
 const popup = document.querySelector(".pop-up"),
   btnClose = document.querySelector(".btn-close");
 
-/* function mostrarPopup() {
-  if (window.scrollY > 100) {
-    popup.classList.add("visible");
-  }
-}
-window.addEventListener("scroll", mostrarPopup);
+// function mostrarPopup() {
+//   if (window.scrollY > 100) {
+//     popup.classList.add("visible");
+//   }
+// }
+// window.addEventListener("scroll", mostrarPopup);
 
-btnClose.addEventListener("click", () => {
-  popup.classList.remove("visible");
-  window.removeEventListener("scroll", mostrarPopup);
-}); */
+// btnClose.addEventListener("click", () => {
+//   popup.classList.remove("visible");
+//   window.removeEventListener("scroll", mostrarPopup);
+// }); 
 
 const ingreso = document.querySelectorAll("input"),
   btnSearch = document.querySelector("#btnSearch"),
@@ -111,7 +111,7 @@ function crearHtml(el) {
                 <h3>${el.nombre}</h3>
                 <p>Precio: $${el.precio} </p>
                   <div class="card-action">
-                    <button id="${el.id}">Comprar</button>
+                    <button class="btn" id="${el.id}">Comprar</button>
                   </div>
               </div>`;
   //se la agrego al contenedor
