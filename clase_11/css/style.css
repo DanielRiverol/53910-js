@@ -79,7 +79,7 @@ form input {
 }
 
 .btn-search,
-.btn-buscar,
+.btn-success,
 .btn-delete {
   background-color: rgb(68, 209, 68);
   width: 130px;

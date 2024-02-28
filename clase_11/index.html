@@ -27,20 +27,20 @@
         </div>
         <!-- Botones -->
         <div class="btn-container">
-          <button class="btn btn-buscar">Mostrar carrito</button>
+          <button class="btn btn-success">Mostrar carrito</button>
           <button class="btn btn-delete">Limpiar carrito</button>
         </div>
 
         <h2>Formulario</h2>
         <form id="form-login">
-          <input type="text" placeholder="Usuario" id="user" />
-          <input type="password" placeholder="Password" id="pass" />
+          <input type="text" placeholder="Usuario" id="user" name="user"/>
+          <input type="password" placeholder="Password" id="pass" name="pass"/>
           <div class="check">
             <label for="check">Recordar</label>
-            <input type="checkbox" id="check" />
+            <input type="checkbox" id="check" name="check"/>
             <p id="message"></p>
           </div>
-          <input type="submit" class="btn btn-login" value="Ingresar" />
+          <input type="submit" class="btn btn-login" value="Ingresar" name="enviar"/>
         </form>
       </main>
     </div>
