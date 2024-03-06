@@ -69,7 +69,6 @@ function crearHtml(arr) {
   }
 }
 
-
 function guardarEnStorage(storage) {
   let user = { usuario: inputUser.value, pass: inputPass.value };
   if (user.usuario == "" || user.pass == "") {
@@ -97,14 +96,11 @@ form?.addEventListener("submit", (e) => {
   check.checked ? guardarEnStorage("local") : guardarEnStorage("session");
 });
 
-
-
 const persona = {
   nombre: "Juanito Arcorirs",
   edad: 18,
   activo: true,
 };
-
 
 const persona1 = {
   nombre: "Juanito Arcorirs",
@@ -114,6 +110,7 @@ const persona1 = {
 
 //destructurig de objetos
 const persona4 = {
+  id: 1,
   nombre: "Homero",
   edad: 38,
   activo: false,
@@ -123,13 +120,87 @@ const persona4 = {
 };
 
 // const nombre= persona4.nombre
-// const edad= persona4.edad
+// const edad = persona4.edad
 
 // console.log(nombre);
 // console.log(edad);
 
 const { nombre, activo, familia } = persona4;
 const { nombre: nombreFamilia } = familia; //alias
-console.log(nombre);
-console.log(activo);
-console.log(nombreFamilia);
+// console.log(nombre);
+// console.log(activo);
+// console.log(nombreFamilia);
+
+// const desestructurar = (obj) => {
+//   const { nombre, edad } = obj;
+//   console.log(`${nombre} edad: ${edad}`);
+// };
+const desestructurar = ({ nombre, edad }) => {
+  console.log(`${nombre} edad: ${edad}`);
+};
+
+desestructurar(persona4);
+
+// const crearTarjeta = (obj) => {
+//   const { nombre, edad } = obj;
+//   let html = `<div class="card">
+//                   <h3> Nombre: ${nombre}</h3>
+//                     <p>Edad: ${edad}</p>
+//                 </div>`;
+//   return html;
+// };
+const crearTarjeta = ({ nombre, edad }) => {
+  return `<div class="card">
+                  <h3> Nombre: ${nombre}</h3>
+                    <p>Edad: ${edad}</p>
+                </div>`;
+};
+//contenedor.innerHTML = crearTarjeta(persona4);
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8];
+//destructuring de arrays
+// const [, a, , b, c] = nums;
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+// console.log(nums);
+// console.log(...nums);
+// console.log(Math.max(...nums));
+// console.log(Math.min(...nums));
+const perros = ["Pancho", "Canela", "Boby"];
+const gatitos = ["Mandivula", "Fonzo", "Mishi"];
+//const mascotas= [perros, gatitos]
+//const mascotas= perros.concat(gatitos)
+const mascotas = [...perros, ...gatitos];
+//console.log(mascotas);
+const homero = {
+  id: 1,
+  nombre: "Homero",
+  edad: 38,
+  activo: false,
+  familia: {
+    nombre: "Marge",
+  },
+};
+console.log(homero);
+const copiaHomero = {
+  ...homero,
+  activo: true,
+  nombre: "Cosme Fulanito",
+};
+console.log(copiaHomero);
+
+function suma(n1, n2) {
+  return n1 + n2;
+}
+// const result1= suma(2,4)
+// console.log(result1);
+// const result2= suma(result1, 4)
+// console.log(result2);
+function calcular(...params) {
+  return params.reduce((acc, n) => acc + n, 0);
+}
+console.log(calcular(1, 2, 3, 3, 4, 1, 7, 4, 3));
+console.log(calcular(3));
+console.log(calcular(10, -13));
