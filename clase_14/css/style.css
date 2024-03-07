@@ -228,9 +228,12 @@ i.active {
   padding: 5px;
 }
 
-.form-control input#ccv {
+form .form-control input {
+  width: 100%;
+}
+form .form-control input#ccv {
   width: 58px;
 }
-.fecha-actual{
+.fecha-actual {
   text-transform: capitalize;
 }
