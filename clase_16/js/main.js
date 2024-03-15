@@ -25,6 +25,33 @@ const servicios = [
   },
 ];
 
+//PROMESAS
+const devolverCD = (response) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (response === true) {
+        resolve("Si tomá gracias por prestarlo");
+      } else {
+        reject("Uh lo perdí");
+      }
+    }, 3000);
+  });
+};
+
+// console.log("YO:");
+// console.log("Hace un tiempo te presté un CD. ¿Te acordás?");
+//  console.log("EL/ELLA: ");
+// devolverCD(true)
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   })
+//   .finally(()=>{
+//     console.log("Bueno Gracias");
+//   });
+
 /* Funciones */
 // función que genera la vista de los servicios
 const renderServicios = (arr) => {
@@ -52,6 +79,64 @@ const renderServicios = (arr) => {
 
 const pedirServicios = (arr) => {
   //Instanciar promesa
+  contenedor.innerHTML = "Cargando...";
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (arr) {
+        resolve(arr);
+      } else {
+        reject("error de datos");
+      }
+    }, 2500);
+  });
 };
-let products = [];
+// let products = [];
 
+// pedirServicios(servicios)
+// .then((respuesta)=>{
+//   products= respuesta
+//   renderServicios(products)
+// }).catch(error=>{
+//   contenedor.innerHTML=error
+// })
+//Fetch
+//JSON.
+// console.log(fetch("https://jsonplaceholder.typicode.com/todos/1"));
+// fetch("https://jsonplaceholder.typicode.com/posts")
+//   .then((res) => res.json())
+//   .then((posts) => {
+//     for (const post of posts) {
+//       console.log(post);
+//       const li = document.createElement("li");
+//       li.className = "card";
+//       li.innerHTML = `
+//             <h2>${post.title}</h2>
+//               <p>${post.body}</p>`;
+//           lista.append(li)
+//     }
+//   });
+// //POST NOSOTROS NO LO PODEMOS REALIZAR SIN UN BACKEND
+// const post= {id:200,
+// title:"SOY UN NUEVO POST",
+// body:"LOREM IPSUM",
+// }
+
+// fetch("https://jsonplaceholder.typicode.com/posts", {
+//   method: "POST",
+//   body: JSON.stringify(post),
+//   headers: {
+//     "Content-type": "application/json; charset=UTF-8",
+//   },
+// }).then(response=>response.json())
+// .then(data=>{
+//   console.log(data);
+// });
+//DATOS LOCALES
+fetch("./db/db.json")
+  .then((res) => res.json())
+  .then((data) => {
+    const { servicios } = data;
+    console.log(data.servicios);
+    console.log(servicios);
+   
+  });
