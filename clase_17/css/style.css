@@ -13,6 +13,9 @@ body {
 .wrapper {
   padding: 1rem;
 }
+.wrapper main {
+  margin-left: 0;
+}
 .lista {
   display: flex;
   flex-wrap: wrap;

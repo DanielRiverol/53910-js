@@ -132,9 +132,22 @@ const pedirServicios = (arr) => {
 //   console.log(data);
 // });
 //DATOS LOCALES
-fetch("./db/db.json")
-  .then((res) => res.json())
-  .then((data) => {
-    const { servicios } = data;
-    console.log(servicios);
-  });
+// fetch("./db/db.json")
+//   .then((res) => res.json())
+//   .then((data) => {
+//     const { servicios } = data;
+//     console.log(servicios);
+//     renderServicios(servicios)
+//   });
+
+  //async await
+const getData = async (url)=>{
+  const respuesta = await fetch(url);
+  const datos = await respuesta.json();
+  
+  const { servicios } = datos;
+  
+  renderServicios(servicios)
+}
+const API_URL = "./db/db.json";
+getData(API_URL);
