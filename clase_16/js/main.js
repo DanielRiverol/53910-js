@@ -54,8 +54,8 @@ const devolverCD = (response) => {
 
 /* Funciones */
 // función que genera la vista de los servicios
+
 const renderServicios = (arr) => {
-  contenedor.innerHTML = "";
   let html;
   for (const item of arr) {
     const { id, nombre, img, precio } = item;
@@ -136,7 +136,5 @@ fetch("./db/db.json")
   .then((res) => res.json())
   .then((data) => {
     const { servicios } = data;
-    console.log(data.servicios);
     console.log(servicios);
-   
   });

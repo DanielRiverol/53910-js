@@ -37,12 +37,6 @@
          "img": "mascarilla.jpeg"
       },
       {
-         "id": 6,
-         "nombre": "mascarillas",
-         "precio": 1900,
-         "img": "mascarilla.jpeg"
-      },
-      {
          "id": 7,
          "nombre": "microblanding",
          "precio": 5800,
