@@ -25,4 +25,5 @@
  - [Clase 14](https://github.com/DanielRiverol/53910-js/tree/main/clase_14)
  - [Clase 15](https://github.com/DanielRiverol/53910-js/tree/main/clase_15)
  - [Clase 16](https://github.com/DanielRiverol/53910-js/tree/main/clase_16)
+ - [Clase 17](https://github.com/DanielRiverol/53910-js/tree/main/clase_17)
  
